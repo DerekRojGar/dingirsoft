@@ -342,12 +342,14 @@ footer {
   width: 100%; overflow: hidden;
 }
 .glitch::before {
-  color: #0ff; clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  color: var(--cyan); clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
   animation: glitch-top 4s infinite linear;
+  opacity: 0.8;
 }
 .glitch::after {
-  color: #f0f; clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  color: var(--green); clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
   animation: glitch-bot 3.5s infinite linear;
+  opacity: 0.8;
 }
 @keyframes glitch-top {
   0%,90%,100% { transform: translate(0); }
